@@ -136,7 +136,7 @@
         #profile-ig-link:hover { color: var(--accent-color); }
 
         @media (max-width: 900px) {
-            .hero-section { grid-template-columns: 1fr; gap: 40px; }
+            .hero-section { grid-template-columns: 1fr; gap: self; gap: 40px; }
             .hero-image-wrapper { aspect-ratio: 1/1; max-width: 400px; margin: 0 auto; border-radius: 20px; }
             .hero-content { text-align: center; }
             .about-section { grid-template-columns: 1fr; }
@@ -154,8 +154,7 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-image-wrapper">
-                <!-- Using a placeholder aesthetic image for now -->
-                <img id="profile-img" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop" alt="Student Portrait">
+                <img id="profile-img" src="https://play-lh.googleusercontent.com/632GyYNKJHBQ0Zw2Lk3ZR95JfnyVt_wL9vXXQmgGaYMDiGxGmUNs3GEkpdy2ka9VJ8F6Bo39Q5P-Pj8H4KTs=w240-h480-rw" alt="Virat Kohli Portrait">
             </div>
             <div class="hero-content">
                 <p class="hero-meta" id="profile-meta-top"></p>
@@ -225,20 +224,20 @@
     </main>
 
     <script>
-        // 1. THIS IS THE SAMPLE DATA (What Supabase will eventually provide)
+        // 1. Virat Kohli Sample Data
         const studentData = {
             name: "Virat Kohli",
             class: "12",
-            section: "Maths",
-            rollNumber: "17",
-            house: "Aravali",
-            bio: "I've always been fascinated by how things work, whether it's solving complex coordinate geometry problems or assembling a PC from scratch. \n\nOutside academics, you'll find me exploring frontend development and trying to make the digital world look a bit more aesthetic for our digital magazine.",
-            hobbies: ["Photography", "Coding", "PC Building", "Gaming"],
-            interests: ["Technology", "Coordinate Geometry", "UI/UX", "Esports"],
-            favouriteSubject: "Mathematics",
-            favouriteBook: "Atomic Habits",
-            favouriteMovie: "Interstellar",
-            favouriteQuote: "We are all in the gutter, but some of us are looking at the stars.",
+            section: "Sports",
+            rollNumber: "18",
+            house: "Nilgiri",
+            bio: "Cricket isn't just a game; it's a way of life that teaches discipline, resilience, and passion. \n\nOn and off the pitch, I believe in pushing boundaries, setting new standards, and inspiring the next generation to chase greatness with unwavering focus.",
+            hobbies: ["Cricket", "Fitness Training", "Traveling", "Badminton"],
+            interests: ["Sports Science", "Nutrition", "Leadership", "Philanthropy"],
+            favouriteSubject: "Physical Education",
+            favouriteBook: "The Autobiography of Yogi",
+            favouriteMovie: "Rocky",
+            favouriteQuote: "Self-belief and hard work will always earn you success.",
             instagram: "virat.kohli",
         };
 
